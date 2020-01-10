@@ -1,0 +1,24 @@
+body {
+  font-family: Palatino;
+
+}
+
+
+#delete-button {
+  background-color: pink;
+  border-radius: 5px;
+  font-size: 0.8em;
+  font-family: 'Roboto Mono', monospace;
+  opacity: 80%;
+  padding: 5px;
+
+}
+
+#save-button {
+  background-color: lightgreen;
+  border-radius: 5px;
+  font-size: 0.8em;
+  font-family: 'Roboto Mono', monospace;
+  opacity: 80%;
+  padding: 5px;
+}

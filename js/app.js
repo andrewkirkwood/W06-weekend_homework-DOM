@@ -1,16 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
   const newRecipeForm = document.querySelector('#new-item-form')
   newRecipeForm.addEventListener('submit', handleNewItemFormSubmit)
+
+  const deleteAllButton = document.querySelector('#delete-all')
+  deleteAllButton.addEventListener('click', handleDeleteAllClick)
 })
 
 const handleNewItemFormSubmit = function (event) {
   event.preventDefault()
   const recipeListItem = createRecipeListItem(event)
   const recipeList = document.querySelector('#recipe-list')
-  console.log(recipeList);
-  console.log(recipeListItem);
   recipeList.appendChild(recipeListItem)
-
   event.target.reset()
 }
 
@@ -32,4 +32,9 @@ const createRecipeListItem = function (form) {
 
   return recipeListItem;
 
+}
+
+const handleDeleteAllClick = function (event) {
+  const recipeList = document.querySelector('#recipe-list')
+  recipeList.innerHTML = ''
 }
