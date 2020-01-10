@@ -21,15 +21,15 @@ const createRecipeListItem = function (form) {
   recipeListItem.classList.add('recipe-list-item')
 
   const name = document.createElement('h2')
-  name.textContent = form.target.name.value
+  name.textContent = `Name: ${form.target.name.value}`
   recipeListItem.appendChild(name)
 
   const category = document.createElement('h3')
-  category.textContent = form.target.category.value
+  category.textContent = `Type: ${form.target.category.value}`
   recipeListItem.appendChild(category)
 
   const rating = document.createElement('h3')
-  rating.textContent = form.target.ratingInput.value
+  rating.textContent = `Rating: ${form.target.ratingInput.value}`
   recipeListItem.appendChild(rating)
 
   return recipeListItem;
