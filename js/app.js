@@ -2,7 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const newRecipeForm = document.querySelector('#new-item-form')
   newRecipeForm.addEventListener('submit', handleNewItemFormSubmit)
 
-  const deleteAllButton = document.querySelector('#delete-all')
+  const deleteAllButton = document.querySelector('#delete-button')
+  console.log(deleteAllButton);
+
   deleteAllButton.addEventListener('click', handleDeleteAllClick)
 })
 
@@ -27,7 +29,7 @@ const createRecipeListItem = function (form) {
   recipeListItem.appendChild(category)
 
   const rating = document.createElement('h3')
-  rating.textContent = form.target.rating.value
+  rating.textContent = form.target.ratingInput.value
   recipeListItem.appendChild(rating)
 
   return recipeListItem;

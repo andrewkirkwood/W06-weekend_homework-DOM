@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <h1>Recipes</h1>
+  <h1 id="title">Recipes</h1>
   <button id="delete-button">Delete All</button>
   <form id="new-item-form" action="index.html" method="post">
     <div id="form-wrapper">
@@ -17,7 +17,7 @@
     <div class="recipe-form-item">
       <label for="name">Category</label>
       <select id="category">
-        <option value="" disabled selected></option>
+        <option value="" disabled selected>Select category</option>
         <option value="Italian">Italian</option>
         <option value="British">British</option>
         <option value="Spanish">Spanish</option>
@@ -25,7 +25,10 @@
     </div>
     <div class="recipe-form-item">
       <label for="taste">Rating</label>
-      <input type="range" min="1" max="10" value="5" id="rating">
+
+      <input id="ratingSlider" type="range" min="0" max="10"  oninput="ratingInput.value=ratingSlider.value"  />
+      <input id="ratingInput" type="number" value="5" min="0" max="10" oninput="ratingSlider.value=ratingInput.value" />
+
     </div>
     <input id="save-button"type="submit" value="save">
   </form>

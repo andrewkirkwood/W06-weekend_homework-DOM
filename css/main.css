@@ -3,6 +3,11 @@ body {
 
 }
 
+#title {
+  background-color: pink;
+  padding: 10px
+}
+
 
 #delete-button {
   background-color: pink;
@@ -10,8 +15,7 @@ body {
   font-size: 0.8em;
   font-family: 'Roboto Mono', monospace;
   opacity: 80%;
-  padding: 5px;
-
+  padding: 7px;
 }
 
 #save-button {
@@ -20,5 +24,5 @@ body {
   font-size: 0.8em;
   font-family: 'Roboto Mono', monospace;
   opacity: 80%;
-  padding: 5px;
+  padding: 7px;
 }
