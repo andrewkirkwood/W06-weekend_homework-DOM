@@ -28,9 +28,9 @@ li.recipe-list-item {
 }
 .title {
   background-color: pink;
-  margin: 5px;
-  padding: 10px;
-  font-size: 1.5em;
+  /* margin: 50px;
+  padding: 5px; */
+  font-size: 1em;
   width: 100%;
   text-align: center;
 
